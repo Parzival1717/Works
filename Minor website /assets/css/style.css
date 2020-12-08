@@ -1,0 +1,129 @@
+html,body{
+  margin: 0;
+  /*This font doesnt work at all =(
+  But in youtube video guides work =`(*/
+  font-family:'LuloCleanOne-Bold' ,monospace ;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #333;
+
+}
+/*I changed code so many times, so I confused in it xD*/
+
+#Trailer{
+}
+
+/*parameters for the container*/
+.container{
+  width: 100%;
+  max-width: 1400px;
+
+}
+
+
+/*Intro*/
+/* parameters for the background image
+Just tried to make it look good with the text*/
+.Intro{
+  width: 100%;
+  height: 100vh;
+  background: url('../images/Intro.jpeg') center no-repeat;
+  background-size: cover;
+
+}
+
+/*Header*/
+/* make it text over content*/
+.header{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding-top: 10px;
+}
+/* Text settings for the Menu Buttons */
+.header_inner{
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+}
+/*Menu*/
+/*So here I wanted to make my buttons with good animation
+Unfortunately I made only part of it*/
+.Menu{
+  display: flex;
+  justify-content: center;
+  padding-left: 200px;
+
+  position: relative;
+  vertical-align: top;
+  font-size: 20px;
+  color: #121212;
+  text-decoration: none;
+  transition: color 0.3s linear;
+
+}
+/*I could do a few <div for menu to fix the problem
+with shadow which works on all buttons,
+However, i suppose its copypaste wasting time*/
+.Menu:hover{
+  color: #FAFAD5;
+  text-shadow: 0px 0px 3px rgba(0, 0, 0, .8);
+}
+
+
+
+/*Logo-Text*/
+/* Here I tried to make text look in 80th style with adding
+two opposite shadow*/
+.header_logo{
+  text-align: center;
+  font-size: 60px;
+  line-height: 1.25;
+  color: #FAFAD5;
+  text-shadow: 4px 4px 6px rgba(0, 0, 255, .6),
+               -4px -4px 6px rgba(255, 0, 0, .6);
+                 padding-top: 0.1px;
+}
+/*Obviously parameters to make my text looks better
+and put it in the middle*/
+.Synopsis{
+  text-align: center;
+  font-size: 15px;
+  color: #000;
+  text-shadow: 1px 1px 1px white, 0 0 1em white;
+  margin-top: -5.5rem;
+}
+/*Ofcourse, Video has to be in the middle of the pages
+In others its look like trash */
+.Video{
+  text-align: center;
+}
+/*Made footnote on the middle and up it a bit,
+because if dont do it, it will be out of the Background
+*/
+.bottomnote{
+  text-align: center;
+  margin-top: -1.9rem;
+}
+/*Page with actors
+Background settings*/
+#Cast{
+  width: 100%;
+  height: 100%;
+  background: url('../images/Intro.jpeg') center no-repeat;
+  background-size: 100%;
+  margin-top: auto;
+}
+
+/* mobile settings*/
+@media screen and (max-width: 768px) {
+  /*youtube settings*/
+  .Video{
+    width: 340px;
+    height: 170px;
+  }
+}
